@@ -1,5 +1,6 @@
 .transaction-table {
-  width: 80%;
+  width: 90%;
+  font-size: 10px;
   padding: 30px;
   margin: 10px auto;
   border-collapse: collapse;
@@ -19,11 +20,5 @@
   th {
      border-top: none;
    }
-}
-
-@media screen and (min-width: $break-point) {
-  .transaction-table {
-    width: 50%;
-  }
 }
 
