@@ -1,0 +1,60 @@
+#apple {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0 10px;
+  padding: 30px;
+}
+
+.item {
+  width: 25%;
+  margin: 0 20px 10px;
+  border-bottom: 1px solid $gray;
+  padding-bottom: 20px;
+
+  img {
+    width: 80%;
+  }
+
+  p {
+    color: $gray;
+    font-size: 11px;
+  }
+
+  button {
+    border: 1px solid $light-gray;
+    background: white;
+    height: 30px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+}
+
+.quantity {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.add {
+  width: 100px;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.quantity:hover {
+  border: 1px solid $dark-blue;
+}
+
+.add:hover {
+  background: $dark-blue;
+  color: white;
+}
+
+.pagination {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: $light-gray;
+}

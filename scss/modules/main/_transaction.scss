@@ -1,0 +1,29 @@
+.transaction-table {
+  width: 80%;
+  padding: 30px;
+  margin: 10px auto;
+  border-collapse: collapse;
+  color: $gray;
+
+  tr {
+    height: 40px;
+  }
+
+  td, th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e4e8;
+    border-top: 1px solid #e2e4e8;
+  }
+
+  th {
+     border-top: none;
+   }
+}
+
+@media screen and (min-width: $break-point) {
+  .transaction-table {
+    width: 50%;
+  }
+}
+

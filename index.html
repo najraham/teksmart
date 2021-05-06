@@ -13,32 +13,35 @@
 </head>
 <body>
     <aside>
-        <header>
-            <img id="logo" src="images/dummy.jpg"  alt="Logo">
-            <h4 id="user">DUMMY USER</h4>
+        <header class="navbar-header">
+            <img class="logo" src="images/dummy.jpg"  alt="Logo">
+            <h4 class="user-name">DUMMY USER</h4>
         </header>
-        <nav>
-            <h4>MENU</h4>
-            <ul>
-                <li class="list active"><a href="index.html"><i class="fas fa-shopping-bag"></i>Browse Catalogue</a></li>
-                <li class="list"><a href="#"><i class="far fa-dot-circle"></i>IMEI Search</a></li>
-                <li class="list">
-                    <a href="pages/transaction.html"><i class="fas fa-list"></i>My Transactions</a>
-                </li>
-                <li class="list"><a href="#"><i class="fas fa-shopping-cart"></i>View Cart - 0 item(s)</a></li>
-            </ul>
+        <nav class="navbar-menu dropdown">
+            <h4 class="dropdown-menu">MENU</h4>
+            <div class="dropdown-content">
+                <ul class="menu-list">
+                    <li class="list active"><a href="index.html"><i class="fas fa-shopping-bag"></i>Browse Catalogue</a></li>
+                    <li class="list"><a href="#"><i class="far fa-dot-circle"></i>IMEI Search</a></li>
+                    <li class="list">
+                        <a href="pages/transaction.html"><i class="fas fa-list"></i>My Transactions</a>
+                    </li>
+                    <li class="list"><a href="#"><i class="fas fa-shopping-cart"></i>View Cart - 0 item(s)</a></li>
+                </ul>
+                <div class="logout-btn">
+                    <button id="logout">Logout</button>
+                </div>
+            </div>
         </nav>
-        <button id="logout">Logout</button>
     </aside>
 
     <main>
-        <header>
+        <header class="main-header">
             <h1>Catalogue</h1>
             <div class="searchbox">
                 <input id="search" type="text" placeholder="Search">
                 <button><i class="fas fa-search"></i></button>
             </div>
-
         </header>
 
         <section id="catalogue">

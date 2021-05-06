@@ -1,0 +1,22 @@
+:root {
+  background-color: $very-light-gray;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  margin: 0;
+}
+
+@media screen and (min-width: $break-point){
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+  main {
+    flex: 1 0 75%;
+  }
+  footer {
+    flex: 1 0 100%;
+  }
+}

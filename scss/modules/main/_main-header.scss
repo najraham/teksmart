@@ -1,0 +1,40 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto 0;
+  border-bottom: $light-gray solid 1px;
+}
+
+#search {
+  border: 0;
+  width: 100px;
+
+  &::placeholder {
+    color: $gray;
+  }
+}
+
+.searchbox {
+  padding: 5px 15px;
+  height: 30px;
+  border: 1px solid #e2e4e8;
+  color: #e2e4e8;
+  width: 140px;
+
+  button {
+    border: none;
+    color: $gray;
+    background: white;
+    font-size: 20px;
+    padding-top: 3px;
+  }
+
+  &:hover {
+    button {
+      transform: scale(1.2);
+    }
+  }
+}
