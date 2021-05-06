@@ -251,7 +251,7 @@ main {
 }
 
 .item {
-  width: 25%;
+  width: 200px;
   margin: 0 20px 10px;
   border-bottom: 1px solid #aeaeae;
   padding-bottom: 20px;
