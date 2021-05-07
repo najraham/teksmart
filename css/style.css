@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 500px) {
   body {
     display: flex;
     flex-direction: row;
@@ -86,7 +86,7 @@ aside {
   background-color: rgba(206, 206, 206, 0.5);
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 500px) {
   .dropdown {
     display: inline-block;
     position: relative;
@@ -114,7 +114,7 @@ aside {
     display: block;
   }
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 500px) {
   aside {
     flex-direction: column;
     align-items: center;
@@ -256,7 +256,6 @@ main {
   .transaction-table td {
     border-bottom: 1px solid #ddd;
     display: block;
-    font-size: 0.8em;
     text-align: right;
   }
   .transaction-table td::before {
