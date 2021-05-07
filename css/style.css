@@ -218,25 +218,57 @@ main {
 
 .transaction-table {
   width: 90%;
-  font-size: 10px;
   padding: 30px;
   margin: 10px auto;
   border-collapse: collapse;
   color: #aeaeae;
 }
-.transaction-table tr {
-  height: 40px;
-}
-.transaction-table td, .transaction-table th {
-  padding: 15px;
+.transaction-table th,
+.transaction-table td {
+  padding: 0.625em;
   text-align: left;
-  border-bottom: 1px solid #e2e4e8;
-  border-top: 1px solid #e2e4e8;
 }
 .transaction-table th {
-  border-top: none;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
+@media screen and (max-width: 950px) {
+  .transaction-table {
+    border: 0;
+  }
+  .transaction-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .transaction-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.725em;
+  }
+  .transaction-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  .transaction-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .transaction-table td:last-child {
+    border-bottom: 0;
+  }
+}
 #apple {
   display: flex;
   flex-direction: row;

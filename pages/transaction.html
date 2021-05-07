@@ -40,103 +40,60 @@
         <h1>My Transactions</h1>
     </header>
     <table class="transaction-table">
-        <tr>
-            <th>TXN ID</th>
-            <th>DATE</th>
-            <th>SHIPMENT DATE</th>
-            <th>SHIPMENT TYPE</th>
-            <th>STATUS</th>
-            <th>TOTAL</th>
-            <th>INVOICE</th>
-            <th>COUPON</th>
-            <th>SELLER</th>
-            <th>ACTION</th>
-        </tr>
-        <tr>
-            <td>556</td>
-            <td>2021-03-01</td>
-            <td>2021-03-01</td>
-            <td>Truckload</td>
-            <td>Received/Processing</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>Richard</td>
-            <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-        </tr>
-        <tr>
-            <td>556</td>
-            <td>2021-03-01</td>
-            <td>2021-03-01</td>
-            <td>Truckload</td>
-            <td>Received/Processing</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>Richard</td>
-            <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-        </tr>
-        <tr>
-            <td>556</td>
-            <td>2021-03-01</td>
-            <td>2021-03-01</td>
-            <td>Truckload</td>
-            <td>Received/Processing</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>Richard</td>
-            <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-        </tr>
-        <tr>
-            <td>556</td>
-            <td>2021-03-01</td>
-            <td>2021-03-01</td>
-            <td>Truckload</td>
-            <td>Received/Processing</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>Richard</td>
-            <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-        </tr>
-        <tr>
-            <td>556</td>
-            <td>2021-03-01</td>
-            <td>2021-03-01</td>
-            <td>Truckload</td>
-            <td>Received/Processing</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>Richard</td>
-            <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-        </tr>
-        <tr>
-        <td>556</td>
-        <td>2021-03-01</td>
-        <td>2021-03-01</td>
-        <td>Truckload</td>
-        <td>Received/Processing</td>
-        <td>&pound; 390.00</td>
-        <td>&pound; 390.00</td>
-        <td>&pound; 390.00</td>
-        <td>Richard</td>
-        <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-    </tr>
-        <tr>
-            <td>556</td>
-            <td>2021-03-01</td>
-            <td>2021-03-01</td>
-            <td>Truckload</td>
-            <td>Received/Processing</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>&pound; 390.00</td>
-            <td>Richard</td>
-            <td><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
-        </tr>
+        <thead>
+            <tr>
+                <th scope="col">TXN ID</th>
+                <th scope="col">DATE</th>
+                <th scope="col">SHIPMENT DATE</th>
+                <th scope="col">SHIPMENT TYPE</th>
+                <th scope="col">STATUS</th>
+                <th scope="col">TOTAL</th>
+                <th scope="col">INVOICE</th>
+                <th scope="col">COUPON</th>
+                <th scope="col">SELLER</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="TXN ID">556</td>
+                <td data-label="DATE">2021-03-01</td>
+                <td data-label="SHIPMENT DATE">2021-03-01</td>
+                <td data-label="SHIPMENT TYPE">Truckload</td>
+                <td data-label="STATUS">Received/Processing</td>
+                <td data-label="TOTAL">&pound; 390.00</td>
+                <td data-label="INVOICE">&pound; 390.00</td>
+                <td data-label="COUPON">&pound; 390.00</td>
+                <td data-label="SELLER">Richard</td>
+                <td data-label="ACTION"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
+            </tr>
+            <tr>
+                <td scope="row" data-label="TXN ID">556</td>
+                <td data-label="DATE">2021-03-01</td>
+                <td data-label="SHIPMENT DATE">2021-03-01</td>
+                <td data-label="SHIPMENT TYPE">Truckload</td>
+                <td data-label="STATUS">Received/Processing</td>
+                <td data-label="TOTAL">&pound; 390.00</td>
+                <td data-label="INVOICE">&pound; 390.00</td>
+                <td data-label="COUPON">&pound; 390.00</td>
+                <td data-label="SELLER">Richard</td>
+                <td data-label="ACTION"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
+            </tr>
+            <tr>
+                <td scope="row" data-label="TXN ID">556</td>
+                <td data-label="DATE">2021-03-01</td>
+                <td data-label="SHIPMENT DATE">2021-03-01</td>
+                <td data-label="SHIPMENT TYPE">Truckload</td>
+                <td data-label="STATUS">Received/Processing</td>
+                <td data-label="TOTAL">&pound; 390.00</td>
+                <td data-label="INVOICE">&pound; 390.00</td>
+                <td data-label="COUPON">&pound; 390.00</td>
+                <td data-label="SELLER">Richard</td>
+                <td data-label="ACTION"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-print"></i></td>
+            </tr>
+        </tbody>
     </table>
+
 </main>
 <footer>Copyright &copy; Anisha 2021 - All rights reserved.</footer>
 </body>
